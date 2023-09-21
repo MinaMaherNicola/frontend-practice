@@ -76,6 +76,20 @@ p {
 	background-color: #f7c08a;
 }
 
+.py-1 {
+	padding: 10px 0;
+}
+.py-2 {
+	padding: 20px 0;
+}
+.py-3 {
+	padding: 30px 0;
+}
+
+.l-heading {
+	font-size: 40px;
+}
+
 #navbar {
 	background-color: #333;
 	overflow: auto;
@@ -174,4 +188,49 @@ p {
 	background-color: #444;
 	color: white;
 	padding: 20px;
+}
+
+#about-info .info-right {
+	float: right;
+	width: 50%;
+	min-height: 100%;
+}
+
+#about-info .info-right img {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 100%;
+}
+
+#about-info .info-left {
+	float: left;
+	width: 50%;
+	min-height: 100%;
+}
+
+#testimonials {
+	height: 600px;
+	background: url('../img//test-bg.jpg') center center/cover no-repeat;
+	color: #fff;
+	padding: 20px;
+}
+
+#testimonials h2 {
+	text-align: center;
+}
+
+#testimonials .testimonial {
+	overflow: hidden;
+	margin-bottom: 40px;
+	border-radius: 7px;
+	padding: 20px;
+	opacity: 0.9;
+}
+
+#testimonials .testimonial img {
+	max-width: 100px;
+	border-radius: 100%;
+	float: left;
+	margin-right: 20px;
 }
