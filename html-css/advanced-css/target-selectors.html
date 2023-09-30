@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Targeted Selectors</title>
+	</head>
+
+	<style>
+		/* First direct child */
+		div > p {
+			background-color: red;
+		}
+
+		/* The element directly after (the next sibling) */
+		div + p {
+			background-color: blue;
+		}
+
+		/* By attribute */
+		a[target] {
+			background-color: burlywood;
+		}
+
+		/* By attribute value */
+		a[target='_self'] {
+			background-color: purple;
+			color: white;
+		}
+	</style>
+	<body>
+		<div>
+			<p>Lorem ipsum dolor sit amet.</p>
+			<ul>
+				<li>Item 1</li>
+				<li><p>Item 2</p></li>
+				<li>Item 3</li>
+			</ul>
+			<p>Lorem ipsum dolor sit amet.</p>
+		</div>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+
+		<a href="#">Without target</a>
+		<a href="#" target="_blank">With target</a>
+		<a href="#" target="_self">With target value</a>
+	</body>
+</html>
